@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Scheduling Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  
+<form action="#" method="post" id="apptForm">
+  <!-- .row #1 -->
+  <div class="row">
+    <div class="col">
+      <h2>Schedule an Appointment</h2> 
+    </div>
+  </div>
+  
+  <!-- .row #2 -->
+  <div class="row">
+    <div class="col">
+      <label for="theDate">Date</label>
+      <input type="text" id="theDate" />
+    </div>
+
+    <div class="col">
+      <label for="time">Time</label>
+      <input type="text" id="time" />
+    </div>
+
+    <div class="col">
+      <!-- 
+      <label for="timeZone">Time Zone</label>
+      <select id="timeZone">
+        <option></option>
+        <option>Pacific</option>
+        <option>Mountain</option>
+        <option>Central</option>
+        <option>Eastern</option>
+        <option>Atlantic</option>
+        <option>Chamarro</option>
+        <option>Samoa</option>
+        <option>Hawaii-Aleutian</option>
+        <option>Alaska</option>
+      </select>
+      -->
+      
+      <label for="timeZone">Time Zone</label>
+      <input list="zones" id="timeZone">
+        <datalist id="zones">
+          <option>Pacific</option>
+          <option>Mountain</option>
+          <option>Central</option>
+          <option>Eastern</option>
+          <option>Atlantic</option>
+          <option>Chamarro</option>
+          <option>Samoa</option>
+          <option>Hawaii-Aleutian</option>
+          <option>Alaska</option>
+        </datalist>
+    </div>
+  </div>
+
+  <!-- .row #3 -->
+  <div class="row">  
+    <div class="col">
+      <label for="contactNumber">Contact Number</label>
+      <input type="text" id="contactNumber" />
+    </div>
+    <div class="col">
+      <label for="email">Email</label>
+      <input type="text" id="email" />
+    </div>
+  </div> 
+  
+  <!-- .row #4 -->
+  <div class="row">  
+    <div class="col">
+      <label for="message">Message</label><br>
+      <textarea id="message"></textarea>
+    </div>
+  </div>
+
+  <!-- .row #5 -->
+  <div class="row">  
+    <div class="col">
+      <input type="submit" />
+    </div>
+  </div>
+</form>
+  
+    <script src="validator.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
